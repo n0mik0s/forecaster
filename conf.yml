@@ -1,0 +1,97 @@
+#list of cluster' nodes
+es_cluster_nodes:
+  - magneto.sdab.sn
+  - beast.sdab.sn
+  - storm.sdab.sn
+
+#elasticsearch connection details
+es_conn_details:
+  protocol: https
+  port: 9200
+  use_ssl: True
+  verify_certs: False
+  ca_certs: root-ca.pem
+
+#index related settings
+es_index_details:
+  in_ipattern: abigdata_metricbeat-*
+  f_ipattern: fperfstor
+  out_index_shards: 2
+  out_index_replicas: 1
+  user: perfstor
+  password: mfFlke4522Fd
+
+#helpers.scan settings
+es_helpers_scan:
+  request_timeout: 10
+  scroll: 15s
+  size: 1000
+
+#metrics to calculate
+metrics:
+  - cpu
+  - fs
+  - memory
+  - process
+
+# use or not multiprocessing
+multiprocessing: True
+processess: 3
+
+#list of monitored nodes
+nodes_list:
+  - alog.pom.mn
+  - arni.sdab.sn
+  - ast-mp1.sdab.sn
+  - ast-mp2.sdab.sn
+  - ava.sdab.sn
+  - belek.sdab.sn
+  - canopus.sdab.sn
+  - dm01db01.sdab.sn
+  - dm01db02.sdab.sn
+  - dm01db03.sdab.sn
+  - dm01db04.sdab.sn
+  - hydra.sdab.sn
+  - idmcluster.astelit.ukr
+  - idmclustern1.astelit.ukr
+  - idmclustern2.astelit.ukr
+  - idmlb.astelit.ukr
+  - iguana1.sdab.sn
+  - iguana2.sdab.sn
+  - izmir.sdab.sn
+  - jarvis.sdab.sn
+  - maximo7-app1.astelit.ukr
+  - maximo7-app2.astelit.ukr
+  - maximo7-db.astelit.ukr
+  - niki.sdab.sn
+  - omar.sdab.sn
+  - oscar.sdab.sn
+  - raid.sdab.sn
+  - sapgrc.sdab.sn
+  - sirius.sdab.sn
+  - skynet.sdab.sn
+  - tango.sdab.sn
+  - tgw3.sdab.sn
+  - tgw4.sdab.sn
+  - iguana3.sdab.sn
+  - iguana4.sdab.sn
+  - lisa.sdab.sn
+  - alisa.sdab.sn
+  - ngcp3.sdab.sn
+  - ngcp4.sdab.sn
+  - john.sdab.sn
+  - paul.sdab.sn
+  - george.sdab.sn
+  - ringo.sdab.sn
+  - ium-dc.ium.ao.sn
+  - bdc.astelit.ukr
+  - dnidc.astelit.ukr
+  - dnidc1.astelit.ukr
+  - dnirodc1.astelit.ukr
+  - pdc.astelit.ukr
+  - soldmznps1.astelit.ukr
+  - soldmznps2.astelit.ukr
+  - solnps1.astelit.ukr
+  - solnps2.astelit.ukr
+  - solrodc1.astelit.ukr
+  - solrodc2.astelit.ukr
