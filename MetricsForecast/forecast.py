@@ -197,15 +197,12 @@ class MetricsForecast():
                 current_ts = int(datetime.datetime.now().timestamp())
                 delta = current_ts - creation_date
 
-                if delta > 72000:
+                if delta > 3600:
                     try:
                         self.es_eng.indices.delete(index=index)
                     except Exception as err:
                         print('ERR: [forecast:_einsert]', err)
                         return False
-                else:
-                    print('ERR: [forecast:_einsert] Index creation time less than 72000s')
-                    return False
             except Exception as err:
                 print('ERR: [forecast:_einsert]', err)
                 return False
