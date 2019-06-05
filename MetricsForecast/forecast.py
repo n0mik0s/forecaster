@@ -240,7 +240,7 @@ class MetricsForecast():
         df = df
         period = int(len(df.index)*0.2)
 
-        m = Prophet(yearly_seasonality=False, daily_seasonality=True)
+        m = Prophet(yearly_seasonality=False, daily_seasonality=True, weekly_seasonality=True)
         m.fit(df)
         future = m.make_future_dataframe(periods=period)
         forecast = m.predict(future)
