@@ -203,6 +203,9 @@ class MetricsForecast():
                     except Exception as err:
                         print('ERR: [forecast:_einsert]', err)
                         return False
+                else:
+                    print('ERR: [forecast:_einsert] Index creation time less than 72000s')
+                    return False
             except Exception as err:
                 print('ERR: [forecast:_einsert]', err)
                 return False
