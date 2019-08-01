@@ -74,34 +74,32 @@ qs = {'cpu': q_cpu,
 
 fperfstat_map = {
     "mappings": {
-        "fperfstat": {
-            "properties": {
-                "ds": {"type": "date", "format": "yyyy-MM-dd'T'HH:mm:ssZ||yyyy-MM-dd"},
-                "node": {"type": "keyword"},
-                "metricset_name": {"type": "keyword"},
-                "filesystem_mount_point": {"type": "keyword"},
-                "filesystem_used_pct": {"type": "float"},
-                "memory_actual_used": {"type": "float"},
-                'cpu_total': {"type": "float"},
-                "trend": {"type": "float"},
-                "yhat_lower": {"type": "float"},
-                "yhat_upper": {"type": "float"},
-                "trend_lower": {"type": "float"},
-                "trend_upper": {"type": "float"},
-                "additive_terms": {"type": "float"},
-                "additive_terms_lower": {"type": "float"},
-                "additive_terms_upper": {"type": "float"},
-                "daily": {"type": "float"},
-                "daily_lower": {"type": "float"},
-                "daily_upper": {"type": "float"},
-                "weekly": {"type": "float"},
-                "weekly_lower": {"type": "float"},
-                "weekly_upper": {"type": "float"},
-                "multiplicative_terms": {"type": "float"},
-                "multiplicative_terms_lower": {"type": "float"},
-                "multiplicative_terms_upper": {"type": "float"},
-                "yhat": {"type": "float"}
-            }
+        "properties": {
+            "ds": {"type": "date", "format": "yyyy-MM-dd'T'HH:mm:ssZ||yyyy-MM-dd"},
+            "node": {"type": "keyword"},
+            "metricset_name": {"type": "keyword"},
+            "filesystem_mount_point": {"type": "keyword"},
+            "filesystem_used_pct": {"type": "float"},
+            "memory_actual_used": {"type": "float"},
+            'cpu_total': {"type": "float"},
+            "trend": {"type": "float"},
+            "yhat_lower": {"type": "float"},
+            "yhat_upper": {"type": "float"},
+            "trend_lower": {"type": "float"},
+            "trend_upper": {"type": "float"},
+            "additive_terms": {"type": "float"},
+            "additive_terms_lower": {"type": "float"},
+            "additive_terms_upper": {"type": "float"},
+            "daily": {"type": "float"},
+            "daily_lower": {"type": "float"},
+            "daily_upper": {"type": "float"},
+            "weekly": {"type": "float"},
+            "weekly_lower": {"type": "float"},
+            "weekly_upper": {"type": "float"},
+            "multiplicative_terms": {"type": "float"},
+            "multiplicative_terms_lower": {"type": "float"},
+            "multiplicative_terms_upper": {"type": "float"},
+            "yhat": {"type": "float"}
         }
     }
 }
